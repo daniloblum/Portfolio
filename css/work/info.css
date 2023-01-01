@@ -1,0 +1,9 @@
+.info {
+	background-color: var(--color-light);
+}
+.info__objective {
+	margin-bottom: 60px;
+}
+.info__title {
+	margin-bottom: 20px;
+}

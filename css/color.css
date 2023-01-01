@@ -1,0 +1,33 @@
+:root {
+	/* Main color */
+	--color-main-100: ;
+	--color-main-100: ;
+	--color-main-100: ;
+	--color-main-100: ;
+	--color-main-100: ;
+
+	/* Text color */
+
+	--color-white: #ffffff;
+	--color-black: #000000;
+
+	--color-dark: #212529;
+	--color-light: #fafafc;
+
+	/* Work => NOW */
+	--color-green: #49b92d;
+	--color-orange: #ff5c00;
+}
+.text-light {
+	color: var(--color-light);
+}
+.bg-light {
+	background-color: var(--color-light);
+}
+
+.color-green {
+	color: var(--color-green);
+}
+.color-orange {
+	color: var(--color-orange);
+}

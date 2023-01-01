@@ -1,0 +1,22 @@
+.oneColumn {
+	margin-bottom: 40px;
+}
+.oneColumn:last-child {
+	margin-bottom: 0;
+}
+
+.oneColumn .row {
+	justify-content: center;
+}
+.oneColumn__subTitle {
+	margin-top: 40px;
+}
+.oneColumn p:last-child {
+	margin-bottom: 40px;
+}
+.oneColumn__image {
+	background-color: var(--color-light);
+	border-radius: 12px;
+	margin: 0 auto 40px;
+	width: 100%;
+}

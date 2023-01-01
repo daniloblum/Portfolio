@@ -1,0 +1,22 @@
+.twoColumns {
+	margin-bottom: 40px;
+}
+.twoColumns__label {
+	display: block;
+	font-family: 'Josefin', sans-serif;
+	font-size: 0.75rem;
+	font-weight: 600;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.twoColumns__list {
+	list-style: none;
+}
+.material-symbols-outlined {
+	font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+.twoColumns__image {
+	border-radius: 12px;
+	background-color: var(--color-light);
+	width: 100%;
+}

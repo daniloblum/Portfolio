@@ -1,0 +1,20 @@
+.title {
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	padding-top: 160px;
+}
+.title--bg-now {
+	background-image: url(/images/work/now/now-head.jpg);
+}
+.title--bg-benie {
+	background-image: url(/images/work/benie/benie-head.jpg);
+}
+.title__brand {
+	border-radius: 8px;
+	margin-bottom: 60px;
+}
+.title__name {
+	margin-bottom: 20px;
+}
