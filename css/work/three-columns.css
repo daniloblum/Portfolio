@@ -1,0 +1,27 @@
+.threeColumns {
+	margin-bottom: 40px;
+}
+.threeColumns:last-child {
+	margin-bottom: 0;
+}
+
+.threeColumns .row {
+	justify-content: start;
+}
+.threeColumns__subTitle {
+	margin-top: 40px;
+}
+.threeColumns p:last-child {
+	margin-bottom: 40px;
+}
+.threeColumns__list-title {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.threeColumns__list-title .material-symbols-outlined {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.threeColumns__column p {
+	display: block;
+}

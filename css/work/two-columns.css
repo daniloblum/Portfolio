@@ -9,6 +9,11 @@
 	margin-bottom: 20px;
 	text-transform: uppercase;
 }
+.twoColumns__title span {
+	display: block;
+	font-size: 1rem;
+	margin-top: 10px;
+}
 .twoColumns__list {
 	list-style: none;
 }

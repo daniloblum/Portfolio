@@ -1,0 +1,68 @@
+.section__hero {
+	height: 600px;
+	/* background-image: url(/images/home/background.svg); */
+	background-position: center;
+	background-size: cover;
+}
+
+.section__hero .main__title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.section__hero .main__title h1 {
+	font-size: 4rem;
+	border: 1px solid #fff;
+	padding: 50px;
+	text-align: center;
+	color: var(--color-dark);
+}
+.section__hero .main__title h1 span {
+	font-size: 2rem;
+	display: block;
+	margin-top: 20px;
+}
+
+/* ----------------
+    Portfolio
+------------------- */
+.section__portfolio {
+	position: relative;
+}
+
+.portfolio__work {
+	margin-bottom: 60px;
+}
+.portfolio__role {
+	color: var(--color-regular);
+}
+.portfolio__title {
+	color: var(--color-dark);
+}
+
+.shapedividers {
+	overflow: hidden;
+	position: relative;
+}
+.shapedividers::before {
+	content: '';
+	font-family: 'shape divider from ShapeDividers.com';
+	position: absolute;
+	z-index: 3;
+	pointer-events: none;
+	background-repeat: no-repeat;
+	bottom: -0.1vw;
+	left: -0.1vw;
+	right: -0.1vw;
+	top: -0.1vw;
+	background-size: 100% 233px;
+	background-position: 50% 100%;
+	background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 381 77.25" preserveAspectRatio="none"><g fill="%23ffffff"><path d="M0 68.78l381-33.86v42.33H0z"/><path d="M0 43.38l381-25.4v59.27H0z" opacity=".33"/><path d="M0 17.98L381 0v77.25H0z" opacity=".33"/></g></svg>');
+}
+
+@media (min-width: 2100px) {
+	.shapedividers::before {
+		background-size: 100% calc(2vw + 233px);
+	}
+}

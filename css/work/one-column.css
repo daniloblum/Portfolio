@@ -6,7 +6,7 @@
 }
 
 .oneColumn .row {
-	justify-content: center;
+	justify-content: start;
 }
 .oneColumn__subTitle {
 	margin-top: 40px;
