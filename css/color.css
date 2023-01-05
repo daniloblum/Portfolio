@@ -21,8 +21,8 @@
 
 	/* Work => Benie */
 	--color-benie: #007ac9;
-	--color-orange: #ff5c00;
 }
+
 .text-light {
 	color: var(--color-light);
 }

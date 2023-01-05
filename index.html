@@ -17,6 +17,7 @@
 		<link rel="stylesheet" href="/css/font.css" />
 		<link rel="stylesheet" href="/css/color.css" />
 		<link rel="stylesheet" href="/css/header.css" />
+		<link rel="stylesheet" href="/css/footer.css" />
 		<link rel="stylesheet" href="/css/buttons.css" />
 		<link rel="stylesheet" href="/css/home.css" />
 	</head>
@@ -54,11 +55,20 @@
 		</header>
 		<main>
 			<section class="section__hero shapedividers">
-				<div class="main__title">
-					<h1>
-						Danilo Blum
-						<span>UX / UI Designer</span>
-					</h1>
+				<div class="hero__content">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<div class="hero__title">
+									<h1>
+										Danilo Blum
+										<span>UX / UI Designer</span>
+									</h1>
+									<p class="hero__about">I'm a Product Designer interested in how good systems can be built. As a usability expert, I help companies and people connect through interfaces and interactions using design methodologies. I'm curious and also try to expand my knowledge in the front-end development area.</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 			<section class="section__portfolio">
@@ -66,10 +76,10 @@
 					<div class="portfolio__work">
 						<div class="row align-items-center justify-content-between">
 							<div class="col-12 col-lg-8 order-last">
-								<img src="/images/home/portfolio-benie.png" alt="" width="100%" />
+								<img src="/images/home/portfolio-benie-1.svg" alt="" width="100%" />
 							</div>
 							<div class="col-12 col-lg-3 order-first">
-								<h2 class="portfolio__title">Benie</h2>
+								<h3 class="portfolio__title">Benie</h3>
 								<p>Tech company for home pharmacies.</p>
 								<p class="portfolio__role">UX / UI Designer</p>
 								<a class="btn btn-primary" type="button" href="works/benie.html">View</a>
@@ -79,10 +89,10 @@
 					<div class="portfolio__work">
 						<div class="row align-items-center justify-content-between">
 							<div class="col-12 col-lg-8 order-last order-lg-first">
-								<img src="/images/home/portfolio-dialog.png" alt="" width="100%" />
+								<img src="/images/home/portfolio-dialog-1.svg" alt="" width="100%" />
 							</div>
 							<div class="col-12 col-lg-3 order-first order-lg-last">
-								<h2 class="portfolio__title">Dialog</h2>
+								<h3 class="portfolio__title">Dialog</h3>
 								<p>Corporate platform for internal integration.</p>
 								<p class="portfolio__role">UX / UI Designer</p>
 								<a class="btn btn-primary" type="button" href="works/dialog.html">View</a>
@@ -92,10 +102,10 @@
 					<div class="portfolio__work">
 						<div class="row align-items-center justify-content-between">
 							<div class="col-12 col-lg-8 order-last">
-								<img src="/images/home/portfolio-now.png" alt="" width="100%" />
+								<img src="/images/home/portfolio-now-1.svg" alt="" width="100%" />
 							</div>
 							<div class="col-12 col-lg-3 order-first">
-								<h2 class="portfolio__title">NOW</h2>
+								<h3 class="portfolio__title">NOW</h3>
 								<p>Information Architect study for specialization curse.</p>
 								<p class="portfolio__role">UX / UI Designer</p>
 								<a class="btn btn-primary" type="button" href="works/now.html">View</a>
@@ -104,21 +114,24 @@
 					</div>
 				</div>
 			</section>
-			<section class="section__about"></section>
+			<section class="section__about bg-light">
+				<div class="container">
+					<div class="row">
+						<div class="col-6">
+							
+						</div>
+					</div>
+				</div>
+			</section>
 			<section class="section-contact"></section>
 		</main>
-		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 px-5 border-top">
 			<div class="col-md-4 d-flex align-items-center">
-			<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-				<svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-			</a>
-			<span class="text-muted">© 2021 Company, Inc</span>
+				<span class="footer__copyright">© 2023 Danilo Blum. All rights reserved.</span>
 			</div>
 
 			<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-			<li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/daniloblum/" target="_blank"><img src="images/linkedin-icon.svg" alt=""></a></li>
-			<li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-			<li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+				<li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/daniloblum/" target="_blank"><img src="images/linkedin-icon-white.svg" alt=""></a></li>
 			</ul>
 		</footer>
 	</body>
