@@ -1,7 +1,8 @@
 .section__hero {
-	padding: 200px 0 200px;
+	padding: 200px 0 100px;
 	min-height: 60vh;
-	background-image: linear-gradient(rgb(234 248 251), #bad7fb);
+	/* background-image: linear-gradient(rgb(234 248 251), #bad7fb); */
+	/* background: var(--color-dark) url(/images/home/rrrainbow1.svg); */
 	background-position: center;
 	background-size: cover;
 }
@@ -28,6 +29,7 @@
 .section__hero .hero__about {
 	margin-bottom: 80px;
 	text-align: center;
+	color: var(--color-dark);
 }
 
 /* ----------------
