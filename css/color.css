@@ -16,11 +16,14 @@
 	--color-light: #fafafc;
 
 	/* Work => NOW */
-	--color-green: #49b92d;
-	--color-orange: #ff5c00;
+	--color-now-green: #49b92d;
+	--color-now-orange: #ff5c00;
 
 	/* Work => Benie */
 	--color-benie: #007ac9;
+
+	/* Dialog */
+	--color-dialog: #0eb27b;
 }
 
 .text-light {
@@ -30,14 +33,17 @@
 	background-color: var(--color-light);
 }
 
-.color-green {
-	color: var(--color-green);
+.color-now-green {
+	color: var(--color-now-green);
 }
-.color-orange {
-	color: var(--color-orange);
+.color-now-orange {
+	color: var(--color-now-orange);
 }
 .color-benie {
 	color: var(--color-benie);
+}
+.color-dialog {
+	color: var(--color-dialog);
 }
 
 .image__background--now {

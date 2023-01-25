@@ -1,18 +1,24 @@
 .title {
-	background-position: center bottom;
-	background-repeat: no-repeat;
-	background-size: cover;
 	height: 600px;
 	padding-top: 160px;
 }
 .title--bg-now {
-	background-image: url(/images/work/now/now-head.jpg);
+	background: var(--color-light) url(../../images/work/now/now-head.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .title--bg-benie {
-	background-image: url(/images/work/benie/work-benie-head.jpg);
+	background: var(--color-benie) url(../../images/work/benie/benie-head.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .title--bg-dialog {
-	background-image: url(/images/work/dialog/work-dialog-head.jpg);
+	background: var(--color-dialog) url(../../images/work/dialog/dialog-head.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .title__brand {
 	border-radius: 8px;
