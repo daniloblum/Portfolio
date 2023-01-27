@@ -3,7 +3,7 @@
 	display: flex;
 	align-items: center;
 	height: 100vh;
-	background: var(--color-dark) url(/images/home/hero-bg.jpg);
+	background: var(--color-dark) url(../images/home/hero-bg.jpg);
 	background-position: left top;
 	background-size: 100%;
 	background-attachment: fixed;
