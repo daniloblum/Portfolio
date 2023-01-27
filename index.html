@@ -58,24 +58,15 @@
 		</header>
 		<main>
 			<section class="section__hero">
-				<div class="hero__content">
-					<div class="container">
-						<div class="row justify-content-start">
-							<div class="col-12 col-md-10 col-lg-8">
-								<div class="hero__title">
-									<h1>
-										Danilo Blum
-										<span>UX / UI Designer</span>
-									</h1>
-									<p class="hero__about">I'm a Product Designer interested in how good systems can be built. As a usability expert, I help companies and people connect through interfaces and interactions using design methodologies. I'm curious and also try to expand my knowledge in the front-end development area.</p>
-								</div>
-							</div>
-							<div class="col-12 col-md-10 col-lg-8">
-								<div class=""></div>
-							</div>
-						</div>
-					</div>
+				<span class="layer-parallax parallax" data-speed="-30"></span>
+				<div class="hero__title parallax" data-speed="50">
+					<span class="welcome">Welcome!</span>
+					<span class="name">I'm Danilo</span>
+					<span class="role">UX/UI Designer that want to help<br />people to make their life easier!</span>
 				</div>
+				<svg class="hero__divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#000000">
+					<path id="divider" d="M0 100 L60 70 L100 0 V100 H0 Z"></path>
+				</svg>
 			</section>
 			<section class="section__portfolio">
 				<div class="container">
@@ -140,5 +131,89 @@
 				</li>
 			</ul>
 		</footer>
+		<script src="js/parallax.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+		<script>
+			var heroDivider = document.querySelector('#divider');
+			var heroHeight = document.querySelector('.hero__divider').scrollHeight;
+			var headerHeight = document.querySelector('.header');
+			window.addEventListener('scroll', function () {
+				const value1 = 100 - ((window.scrollY * 100) / heroHeight) * 1.5;
+				const value2 = 70 - ((window.scrollY * 70) / heroHeight) * 1.5;
+				const value3 = 0;
+				heroDivider.setAttribute('d', 'M0 ' + value1 + ' L60 ' + value2 + ' L100 ' + value3 + ' V100 H0 Z');
+				console.log(heroDivider.getAttribute('d'));
+				console.log(value3);
+				console.log(window.scrollY);
+				console.log(heroHeight);
+			});
+		</script>
+		<!-- <script>
+			var animation = anime({
+				targets: '#divider',
+				// translateX: 40,
+				d: [{ value: 'M0 100 L60 75 L100 0 V100 H0 Z' }, { value: 'M0 0 L60 0 L100 0 V100 H0 Z' }],
+				easing: 'easeInOutSine',
+				autoplay: false,
+				duration: 10,
+				width: '100%',
+			});
+			window.addEventListener('scroll', function () {
+				let calculo = animation.duration * (window.scrollY / 100);
+
+				animation.seek(calculo);
+
+				console.log('window ' + window.scrollY);
+				console.log('seek ' + calculo);
+			});
+		</script> -->
+		<!-- <script>
+			const sectionHero = document.querySelector('.section__hero');
+			const heroDivider = document.querySelector('.hero__divider');
+
+			var animation = anime({
+				targets: '#divider',
+				//translateX: 10,
+				d: [{ value: 'M0 100 L60 75 L100 0 V100 H0 Z' }, { value: 'M0 50 L60 50 L100 50 V100 H0 Z' }],
+				easing: 'easeInOutSine',
+				autoplay: false,
+				duration: 1000,
+				delay: 0,
+			});
+
+			var controller = new ScrollMagic.Controller();
+
+			var scene = new ScrollMagic.Scene({
+				triggerElement: '.section__hero',
+				offset: sectionHero.scrollHeight, // start scene after scrolling for 100px
+				duration: sectionHero.scrollHeight / 2, // pin the element for 400px of scrolling
+				triggerHook: 1,
+			})
+				.addIndicators()
+				.on('progress', function (event) {
+					animation.seek(animation.duration * event.progress);
+				})
+				.setPin(animation) // the element we want to pin
+				.addTo(controller);
+
+			// Animate on scroll
+			// const animateOnScroll = function (div, speed = 100, offset = 0) {
+			// 	const scrollPercent = window.pageYOffset - div.offsetTop;
+			// 	return (scrollPercent + offset) / speed;
+			// };
+
+			// Scroll listener
+			// window.onscroll = function () {
+			// 	animation.seek(animateOnScroll(sectionHero, 1000, 0) * animation.duration);
+
+			// 	console.log('pagina ' + window.pageYOffset);
+			// 	console.log('objeto ' + heroDivider.scrollHeight);
+			// };
+		</script> -->
 	</body>
 </html>
