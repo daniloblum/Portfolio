@@ -23,46 +23,50 @@
 	</head>
 	<body>
 		<header class="header">
-			<nav class="navbar navbar-expand-lg">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="../index.html">Danilo Blum</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<nav class="navbar">
+				<div class="navbar__brand">
+					<a class="brand__link d-none" href="../index.html">Danilo Blum</a>
+				</div>
+				<div class="navbar__nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__link active" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav__item dropdown">
+							<a class="nav__link dropdown__toggle" href="#">Work</a>
+							<ul class="dropdown__menu">
+								<li><a class="dropdown__item" href="works/benie.html">Benie</a></li>
+								<li><a class="dropdown__item" href="works/dialog.html">Dialog</a></li>
+								<li><a class="dropdown__item" href="works/now.html">NOW</a></li>
+							</ul>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="index.html#about">About</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="index.html#contact">Contact</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="https://www.linkedin.com/in/daniloblum/" target="_blank"><img src="../images/linkedin-icon.svg" alt="" height="20px" /></a>
+						</li>
+					</ul>
+					<button class="nav__mobile-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="index.html">Home</a>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Work </a>
-								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="works/benie.html">Benie</a></li>
-									<li><a class="dropdown-item" href="works/dialog.html">Dialog</a></li>
-									<li><a class="dropdown-item" href="works/now.html">NOW</a></li>
-								</ul>
-							</li>
-							<!-- <li class="nav-item">
-								<a class="nav-link" href="index.html#about">About</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="index.html#contact">Contact</a>
-							</li>-->
-							<li class="nav-item">
-								<a class="nav-link" href="https://www.linkedin.com/in/daniloblum/" target="_blank"><img src="../images/linkedin-icon.svg" alt="" height="20px" /></a>
-							</li>
-						</ul>
-					</div>
 				</div>
 			</nav>
 		</header>
 		<main>
-			<section class="section__hero">
+			<section id="title" class="section__hero">
 				<span class="layer-parallax parallax" data-speed="-30"></span>
 				<div class="hero__title parallax" data-speed="50">
-					<span class="welcome">Welcome!</span>
-					<span class="name">I'm Danilo</span>
-					<span class="role">UX/UI Designer that want to help<br />people to make their life easier!</span>
+					<h2>
+						<span class="welcome">Welcome!</span>
+						<br />
+						<span class="name">I'm Danilo</span>
+						<br />
+						<span class="role">UX/UI Designer that want to help<br />people to make their life easier!</span>
+					</h2>
 				</div>
 				<svg class="hero__divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#000000">
 					<path id="divider" d="M0 100 L60 70 L100 0 V100 H0 Z"></path>
@@ -70,41 +74,48 @@
 			</section>
 			<section class="section__portfolio">
 				<div class="container">
-					<div class="portfolio__work">
-						<div class="row align-items-center justify-content-between">
+					<div class="portfolio__mensage">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 text-center">
+								<h4>Design with <span>empathy</span> and <span>strategy</span>. Create solutions for user needs and business opportunities.</h4>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio__work" benie>
+						<div class="row align-items-center justify-content-center content">
 							<div class="col-12 col-lg-8 order-last">
-								<img src="images/home/portfolio-benie-1.svg" alt="" width="100%" />
+								<img src="images/home/portfolio-benie-2.png" alt="" height="600px" />
 							</div>
 							<div class="col-12 col-lg-3 order-first">
 								<h3 class="portfolio__title">Benie</h3>
 								<p>Tech company for home pharmacies.</p>
-								<p class="portfolio__role">UX / UI Designer</p>
+								<!-- <p class="portfolio__role">UX / UI Designer</p> -->
 								<a class="btn btn-primary" type="button" href="works/benie.html">View</a>
 							</div>
 						</div>
 					</div>
-					<div class="portfolio__work">
-						<div class="row align-items-center justify-content-between">
-							<div class="col-12 col-lg-8 order-last order-lg-first">
-								<img src="images/home/portfolio-dialog-1.svg" alt="" width="100%" />
+					<div class="portfolio__work" dialog>
+						<div class="row align-items-center justify-content-center content">
+							<div class="col-12 col-lg-8 order-last text-end">
+								<img src="images/home/portfolio-dialog-2.png" alt="" height="600px" />
 							</div>
-							<div class="col-12 col-lg-3 order-first order-lg-last">
+							<div class="col-12 col-lg-3 order-first">
 								<h3 class="portfolio__title">Dialog</h3>
 								<p>Corporate platform for internal integration.</p>
-								<p class="portfolio__role">UX / UI Designer</p>
+								<!-- <p class="portfolio__role">UX / UI Designer</p> -->
 								<a class="btn btn-primary" type="button" href="works/dialog.html">View</a>
 							</div>
 						</div>
 					</div>
-					<div class="portfolio__work">
-						<div class="row align-items-center justify-content-between">
-							<div class="col-12 col-lg-8 order-last">
-								<img src="images/home/portfolio-now-1.svg" alt="" width="100%" />
+					<div class="portfolio__work" now>
+						<div class="row align-items-center justify-content-center content">
+							<div class="col-12 col-lg-8 order-last text-end">
+								<img src="images/home/portfolio-now-2.png" alt="" height="600px" />
 							</div>
 							<div class="col-12 col-lg-3 order-first">
 								<h3 class="portfolio__title">NOW</h3>
 								<p>Information Architect study for specialization curse.</p>
-								<p class="portfolio__role">UX / UI Designer</p>
+								<!-- <p class="portfolio__role">UX / UI Designer</p> -->
 								<a class="btn btn-primary" type="button" href="works/now.html">View</a>
 							</div>
 						</div>
@@ -131,28 +142,16 @@
 				</li>
 			</ul>
 		</footer>
+		<script src="js/header.js"></script>
 		<script src="js/parallax.js"></script>
+		<script src="js/home.js"></script>
 		<script src="js/anime.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
 
 		<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
-		<script>
-			var heroDivider = document.querySelector('#divider');
-			var heroHeight = document.querySelector('.hero__divider').scrollHeight;
-			var headerHeight = document.querySelector('.header');
-			window.addEventListener('scroll', function () {
-				const value1 = 100 - ((window.scrollY * 100) / heroHeight) * 1.5;
-				const value2 = 70 - ((window.scrollY * 70) / heroHeight) * 1.5;
-				const value3 = 0;
-				heroDivider.setAttribute('d', 'M0 ' + value1 + ' L60 ' + value2 + ' L100 ' + value3 + ' V100 H0 Z');
-				console.log(heroDivider.getAttribute('d'));
-				console.log(value3);
-				console.log(window.scrollY);
-				console.log(heroHeight);
-			});
-		</script>
+
 		<!-- <script>
 			var animation = anime({
 				targets: '#divider',

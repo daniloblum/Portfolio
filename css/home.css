@@ -3,9 +3,9 @@
 	display: flex;
 	align-items: center;
 	height: 100vh;
-	background: var(--color-dark) url(../images/home/hero-bg.jpg);
+	background: url('../images/home/endless-constellation.svg'), linear-gradient(90deg, #c82f25, #ff5c00);
 	background-position: left top;
-	background-size: 100%;
+	background-size: auto;
 	background-attachment: fixed;
 	/* clip-path: polygon(0 0, 100% 0%, 100% 80px, 60% 80%, 0% 100%, round 20px); */
 }
@@ -32,28 +32,21 @@
 	margin-left: 15vw;
 	margin-bottom: 15vh;
 	max-width: 36vw;
-	z-index: 1;
 }
-
-.section__hero .hero__title .welcome {
-	display: block;
-	font-size: 60px;
+.section__hero .hero__title {
 	color: #ffffff;
 	font-family: 'Josefin Sans', sans-serif;
+}
+.section__hero .hero__title .welcome {
+	font-size: 60px;
 	font-weight: 600;
 }
 .section__hero .hero__title .name {
-	display: block;
 	font-size: 140px;
-	color: #ffffff;
-	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 700;
 }
 .section__hero .hero__title .role {
-	display: block;
 	font-size: 32px;
-	color: #ffffff;
-	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 600;
 }
 
@@ -63,15 +56,52 @@
 .section__portfolio {
 	position: relative;
 }
+.portfolio__mensage {
+	padding: 100px 0;
+}
+.portfolio__mensage h4 {
+	line-height: 125%;
+}
+.portfolio__mensage h4 span {
+	color: #e04314;
+}
 
 .portfolio__work {
-	margin-bottom: 60px;
+	position: relative;
+	margin: 100px 0;
 }
+.portfolio__work .content {
+	z-index: 1;
+	position: inherit;
+	padding: 0 60px;
+	color: #ffffff;
+}
+.portfolio__work::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 60px;
+	bottom: 60px;
+	border-radius: 20px;
+	z-index: 0;
+}
+.portfolio__work[benie]::before {
+	background-color: var(--color-benie);
+}
+.portfolio__work[dialog]::before {
+	background-color: var(--color-dialog);
+}
+.portfolio__work[now]::before {
+	background-color: var(--color-now-purple);
+}
+
 .portfolio__role {
 	color: var(--color-regular);
 }
 .portfolio__title {
-	color: var(--color-dark);
+	font-size: 80px;
+	line-height: 75%;
 }
 
 .shapedividers {

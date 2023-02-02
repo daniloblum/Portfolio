@@ -26,41 +26,41 @@
 	</head>
 	<body>
 		<header class="header">
-			<nav class="navbar navbar-expand-lg">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="../index.html">Danilo Blum</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<nav class="navbar">
+				<div class="navbar__brand">
+					<a class="brand__link" href="../index.html">Danilo Blum</a>
+				</div>
+				<div class="navbar__nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__link active" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav__item dropdown">
+							<a class="nav__link dropdown__toggle" href="#">Works</a>
+							<ul class="dropdown__menu">
+								<li><a class="dropdown__item" href="benie.html">Benie</a></li>
+								<li><a class="dropdown__item" href="dialog.html">Dialog</a></li>
+								<li><a class="dropdown__item active" href="now.html">NOW</a></li>
+							</ul>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="index.html#about">About</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="index.html#contact">Contact</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="https://www.linkedin.com/in/daniloblum/" target="_blank"><img src="../images/linkedin-icon.svg" alt="" height="20px" /></a>
+						</li>
+					</ul>
+					<button class="nav__mobile-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link" aria-current="page" href="../index.html">Home</a>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Work </a>
-								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="benie.html">Benie</a></li>
-									<li><a class="dropdown-item" href="dialog.html">Dialog</a></li>
-									<li><a class="dropdown-item active" href="now.html">NOW</a></li>
-								</ul>
-							</li>
-							<!-- <li class="nav-item">
-								<a class="nav-link" href="../index.html#about">About</a>
-							</li> -->
-							<li class="nav-item">
-								<a class="nav-link" href="../index.html#contact">Contact</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="https://www.linkedin.com/in/daniloblum/" target="_blank"><img src="../images/linkedin-icon.svg" alt="" height="20px"></a>
-							</li>
-						</ul>
-					</div>
 				</div>
 			</nav>
 		</header>
 		<main>
-			<section id="title" class="section title title--bg-now">
+			<section id="title" class="section title--bg-now">
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-12 col-md-7 col-lg-6 col-xl-5">
@@ -156,15 +156,15 @@
 								<p>I created some tasks for the users complete based in some hipoteses that I had. In this test I could:</p>
 								<ul class="twoColumns__list list-group">
 									<li class="twoColumns__item list-item">
-										<span class="material-symbols-outlined color-now-orange">visibility</span>
+										<span class="material-symbols-outlined color-now-purple">visibility</span>
 										<p>Observe how users use the system</p>
 									</li>
 									<li class="twoColumns__item list-item">
-										<span class="material-symbols-outlined color-now-orange">edit_note</span>
+										<span class="material-symbols-outlined color-now-purple">edit_note</span>
 										<p>Identify usability problems related to information architecture</p>
 									</li>
 									<li class="twoColumns__item list-item">
-										<span class="material-symbols-outlined color-now-orange">move_down</span>
+										<span class="material-symbols-outlined color-now-purple">move_down</span>
 										<p>Propose improvements to identified problems</p>
 									</li>
 								</ul>
@@ -264,6 +264,7 @@
 		</footer>
 
 		<!-- JavaScript Bundle with Popper -->
+		<script src="../js/header.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 	</body>
 </html>

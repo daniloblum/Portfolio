@@ -1,4 +1,4 @@
-.title {
+#title {
 	height: 600px;
 	padding-top: 160px;
 }
@@ -9,7 +9,7 @@
 	background-size: cover;
 }
 .title--bg-benie {
-	background: var(--color-benie) url(../../images/work/benie/benie-head.jpg);
+	background: var(--color-benie-blue) url(../../images/work/benie/benie-head.jpg);
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: cover;

@@ -26,47 +26,48 @@
 	</head>
 	<body>
 		<header class="header">
-			<nav class="navbar navbar-expand-lg">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="../index.html">Danilo Blum</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<nav class="navbar">
+				<div class="navbar__brand">
+					<a class="brand__link" href="../index.html">Danilo Blum</a>
+				</div>
+				<div class="navbar__nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__link active" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav__item dropdown">
+							<a class="nav__link dropdown__toggle" href="#">Works</a>
+							<ul class="dropdown__menu">
+								<li><a class="dropdown__item active" href="benie.html">Benie</a></li>
+								<li><a class="dropdown__item" href="dialog.html">Dialog</a></li>
+								<li><a class="dropdown__item" href="now.html">NOW</a></li>
+							</ul>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="index.html#about">About</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="index.html#contact">Contact</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="https://www.linkedin.com/in/daniloblum/" target="_blank"><img src="../images/linkedin-icon.svg" alt="" height="20px" /></a>
+						</li>
+					</ul>
+					<button class="nav__mobile-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link" aria-current="page" href="../index.html">Home</a>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Work </a>
-								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item active" href="benie.html">Benie</a></li>
-									<li><a class="dropdown-item" href="dialog.html">Dialog</a></li>
-									<li><a class="dropdown-item" href="now.html">NOW</a></li>
-								</ul>
-							</li>
-							<!-- <li class="nav-item">
-								<a class="nav-link" href="../index.html#about">About</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../index.html#contact">Contact</a>
-							</li> -->
-							<li class="nav-item">
-								<a class="nav-link" href="https://www.linkedin.com/in/daniloblum/" target="_blank"><img src="../images/linkedin-icon.svg" alt="" height="20px" /></a>
-							</li>
-						</ul>
-					</div>
 				</div>
 			</nav>
 		</header>
 		<main>
-			<section id="title" class="section title title--bg-benie">
+			<section id="title" class="section title--bg-benie">
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-12 col-md-7 col-lg-6 col-xl-5 text-light">
 							<img class="title__brand" src="../images/work/benie/logo.jpg" alt="" sizes="" srcset="" />
 							<h1 class="title__name">Benie</h1>
-							<p class="title__description">Tech company with digital service focused on the management and supply of home pharmacies.</p>
+							<p class="title__description">Benie is a digital pharmacy focused on supplying medicines and personal care products directly to consumers, and helping them to manage their in-home pharmacies.</p>
+							<p><em>UI/UX Designer</em></p>
 						</div>
 					</div>
 				</div>
@@ -76,19 +77,16 @@
 					<div class="row">
 						<div class="col-12 col-md-10 col-lg-5">
 							<div class="info__about">
-								<h2 class="info__about-title">About</h2>
-								<p>Benie has developed a simple, more intuitive platform to rebuild the pharmacy experience.</p>
-								<p>Contrary to the conventional operation, its performance was 100% digital by its application. From it, the company saw opportunities in distribution, market development, private service, product mix, and pricing strategy. All this to create a fully patient-focused experience.</p>
+								<h3 class="info__about-title">About</h3>
+								<p>Benie developed a simple and intuitive platform to rebuild the pharmacy experience. Unlike other conventional businesses, Benie fully integrated its operations and management through digital applications.</p>
+								<p>Their digital platform opened new opportunities in distribution, market development, private service, product mix, and pricing strategy. All this to create a novel and unique patient-focused experience.</p>
 							</div>
 						</div>
 						<div class="col-12 col-md-10 col-lg-5 offset-lg-1">
 							<div class="info__objective">
-								<h3 class="info__title">Goal</h3>
-								<p>Redesign the app with the new branding and styles. Design new features to improve the user experience to attract new customers and make them recurrent.</p>
-							</div>
-							<div class="info__role">
-								<h3 class="info__title">Role</h3>
-								<p>UX / UI Design</p>
+								<h3 class="info__about-title">Accomplishments</h3>
+								<p>As a UX/UI designer I recreated their app’s interface, with new features. The app's new look incorporates elements of the company's rebranding.</p>
+								<p>The dynamics of the new interface significantly improved the user experience, and helped retain and attract new customers.</p>
 							</div>
 						</div>
 					</div>
@@ -100,8 +98,12 @@
 						<div class="row">
 							<div class="col-12 col-md-10 col-lg-8">
 								<h3 class="oneColumn__title">Design System</h3>
-								<p>The company had a complete rebranding including new colors pallete, shapes and voice tone. The app was already built and avaiable for the costumers, so first of all I adapted the old component styles to a new one trying to be more simple and light.</p>
-								<p>Working with Adobe XD I had an idea to organize the elements in mobile artboards, so I could check them directly on my phone.</p>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<p>Benie underwent a thorough rebranding, with a new color pallete, shapes, and tone of voice. The new brand incorporated lighter colors, which were more suited to the company's mission. With the application already in use by their customers, it was necessary to adapt the existing components to the new style.</p>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<p>I worked with Adobe XD to organize the elements on mobile-style clipboards. The benefit from such design system is that I could check the elements out directly on my phone.</p>
 							</div>
 							<div class="col-12">
 								<!-- <iframe style="" width="100%" height="720" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F6psFT9wQQOf8TkgOpZ85yt%2FUntitled%3Fpage-id%3D129%253A92%26node-id%3D565%253A466%26viewport%3D1698%252C9662%252C0.37%26scaling%3Dmin-zoom%26starting-point-node-id%3D565%253A466%26hide-ui%3D1" allowfullscreen></iframe> -->
@@ -125,19 +127,19 @@
 							<div class="col-12 col-md-6 col-lg-4">
 								<span class="twoColumns__label">Feature</span>
 								<h3 class="twoColumns__title">Price Magnifying Glass</h3>
-								<p>One of the strategies to attract new costumers and grow up the average ticket was incentives the costumers to put more products on the basket (shopping cart).</p>
+								<p>The marketing department suggested a strategy to attract new customers and increase the average ticket. The goal was to engage customers to add more items to the cart, by providing them with a discount based on the lowest prices available on the market.</p>
 								<ul class="twoColumns__list list-group">
 									<li class="twoColumns__item list-item">
-										<span class="material-symbols-outlined color-benie">visibility</span>
+										<span class="material-symbols-outlined color-benie-yellow">category</span>
 										<p>The basket must have 3 or more different products to run the feature.</p>
 									</li>
 									<li class="twoColumns__item list-item">
-										<span class="material-symbols-outlined color-benie">edit_note</span>
-										<p>The feature simulate the user's basket at other 3 main competitors pharmacies.</p>
+										<span class="material-symbols-outlined color-benie-yellow">local_pharmacy</span>
+										<p>The feature simulates the user's cart with prices from three of their main competitor pharmacies.</p>
 									</li>
 									<li class="twoColumns__item list-item">
-										<span class="material-symbols-outlined color-benie">move_down</span>
-										<p>If one of the found prices is lower, Benie cover the lowest value.</p>
+										<span class="material-symbols-outlined color-benie-yellow">price_change</span>
+										<p>If any of the competitors’ prices was lower, Benie would match the competitor’s price with a discount.</p>
 									</li>
 								</ul>
 							</div>
@@ -150,7 +152,7 @@
 						<div class="row">
 							<div class="col-12 col-md-10 col-lg-8">
 								<h4 class="oneColumn__subTitle">User flow</h4>
-								<p>I made this user flow to visualize better how users interact with this feature.</p>
+								<p>I created this user flow to better visualize how users would interact with this feature.</p>
 							</div>
 							<div class="col-12">
 								<img class="oneColumn__image img-fluid" src="../images/work/benie/benie-feature-1b.svg" alt="" />
@@ -162,8 +164,8 @@
 								<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nobis, eaque eius magnam totam delectus adipisci asperiores harum repellat a facilis inventore tempore, ullam error modi cumque, libero quos deserunt.</p> -->
 							</div>
 							<div class="col-12">
-								<img class="oneColumn__image img-fluid" src="../images/work/benie/benie-feature-1c.svg" alt="" />
-								<img class="oneColumn__image img-fluid" src="../images/work/benie/benie-feature-1d.svg" alt="" />
+								<img class="oneColumn__image img-fluid bg-benie-gradient" src="../images/work/benie/benie-feature-1c.svg" alt="" />
+								<img class="oneColumn__image img-fluid bg-benie-gradient" src="../images/work/benie/benie-feature-1d.svg" alt="" />
 							</div>
 						</div>
 					</div>
@@ -176,19 +178,19 @@
 							<div class="col-12 col-md-6 col-lg-4">
 								<span class="twoColumns__label">Feature</span>
 								<h3 class="twoColumns__title">Digital Prescription</h3>
-								<p>The increase of virtual medical appointment and medicine’s online shopping, doctors are prescribing their patients with the digital prescription.</p>
+								<p>The recent increase in virtual medical appointments has led to an increase in digital prescriptions. Benie decided to exploit this opportunity implementing the following initiatives:</p>
 								<ul class="twoColumns__list list-group">
 									<li class="twoColumns__item list-item">
-										<span class="material-symbols-outlined color-benie">account_tree</span>
-										<p>Bring all the patient information from the digital prescription and build a simple and easy flow to order their medicines.</p>
+										<span class="material-symbols-outlined color-benie-yellow">handshake</span>
+										<p>Establish partnerships with companies that are developing their own platforms and APIs to support digital prescriptions, to insert a button “Order from Benie” to their platforms.</p>
 									</li>
 									<li class="twoColumns__item list-item">
-										<span class="material-symbols-outlined color-benie">event_repeat</span>
-										<p>Patients information can be useful to know their needs and try to make them to create automatic recurring orders.</p>
+										<span class="material-symbols-outlined color-benie-yellow">account_tree</span>
+										<p>Use the information in a digital prescription to automatically add the prescribed medicines to the cart.</p>
 									</li>
 									<li class="twoColumns__item list-item">
-										<span class="material-symbols-outlined color-benie">handshake</span>
-										<p>Partnership with particular companies that are developing their own platforms and API. Insert a button “Order with Benie” in their platforms.</p>
+										<span class="material-symbols-outlined color-benie-yellow">event_repeat</span>
+										<p>Collect data about patients and medicines to automatically suggest recurring orders to their customers.</p>
 									</li>
 								</ul>
 							</div>
@@ -201,7 +203,7 @@
 						<div class="row">
 							<div class="col-12 col-md-10 col-lg-8">
 								<h4 class="oneColumn__subTitle">User flow</h4>
-								<p>Create a simple flow where the user can make a specific search for each medicine in the list.</p>
+								<p>I created a user flow where the user can easily place an order with Benie straight from their digital prescription provider platform.</p>
 							</div>
 							<div class="col-12">
 								<img class="oneColumn__image img-fluid" src="../images/work/benie/benie-feature-2b.svg" alt="" />
@@ -213,7 +215,7 @@
 								<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nobis, eaque eius magnam totam delectus adipisci asperiores harum repellat a facilis inventore tempore, ullam error modi cumque, libero quos deserunt.</p> -->
 							</div>
 							<div class="col-12">
-								<img class="oneColumn__image img-fluid" src="../images/work/benie/benie-feature-2c.svg" alt="" />
+								<img class="oneColumn__image img-fluid bg-benie-gradient" src="../images/work/benie/benie-feature-2c.svg" alt="" />
 							</div>
 						</div>
 					</div>
@@ -254,5 +256,6 @@
 
 		<!-- JavaScript Bundle with Popper -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+		<script src="../js/header.js"></script>
 	</body>
 </html>
