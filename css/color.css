@@ -18,15 +18,19 @@
 	/* Work => NOW */
 	--color-now-green: #49b92d;
 	--color-now-purple: #ba3fbc;
+	--color-now-purple-dark: #902f92;
+	--color-now-gradient: linear-gradient(90deg, var(--color-now-purple-dark), var(--color-now-purple));
 
 	/* Work => Benie */
 	--color-benie-blue: #00a9e0;
 	--color-benie-blue-dark: #007ac9;
+	--color-benie-gradient: linear-gradient(90deg, var(--color-benie-blue-dark), var(--color-benie-blue));
 	--color-benie-yellow: #f2af00;
 
 	/* Dialog */
-	--color-dialog: #0eb27b;
-	--color-dialog: #086b4a;
+	--color-dialog-green: #0eb27b;
+	--color-dialog-green-dark: #086b4a;
+	--color-dialog-gradient: linear-gradient(90deg, var(--color-dialog-green-dark), var(--color-dialog-green));
 }
 
 .text-light {
@@ -51,13 +55,13 @@
 	background-color: var(--color-benie);
 }
 .bg-benie-gradient {
-	background-image: linear-gradient(90deg, var(--color-benie-blue-dark), var(--color-benie-blue));
+	background-image: var(--color-benie-gradient);
 }
 
 /* DIALOG COLORS */
 
 .color-dialog {
-	color: var(--color-dialog);
+	color: var(--color-dialog-green);
 }
 .color-now-green {
 	color: var(--color-now-green);
