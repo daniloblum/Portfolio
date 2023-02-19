@@ -11,13 +11,13 @@ window.addEventListener('scroll', function () {
 	heroDivider.setAttribute('d', 'M0 ' + value1 + ' L60 ' + value2 + ' L100 ' + value3 + ' V100 H0 Z');
 
 	// console.log(value1);
-	if (value1 <= 0) {
-		console.log('ok!');
+	// if (value1 <= 0) {
+	// 	console.log('ok!');
 
-		headerBrand.classList.remove('d-none');
-		headerBrand.classList.add('d-block');
-	} else {
-		headerBrand.classList.remove('d-block');
-		headerBrand.classList.add('d-none');
-	}
+	// 	headerBrand.classList.remove('d-none');
+	// 	headerBrand.classList.add('d-block');
+	// } else {
+	// 	headerBrand.classList.remove('d-block');
+	// 	headerBrand.classList.add('d-none');
+	// }
 });
