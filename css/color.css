@@ -39,6 +39,12 @@
 .text-light {
 	color: var(--color-light);
 }
+.text-dark {
+	color: var(--color-dark);
+}
+.text-white {
+	color: var(--color-white);
+}
 .bg-light {
 	background-color: var(--color-light);
 }

@@ -31,14 +31,17 @@
 					<a class="brand__link" href="../index.html">Danilo Blum</a>
 				</div>
 				<div class="navbar__nav">
+					<button id="menuToggle" class="nav__mobile-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="material-symbols-outlined">menu</span>
+					</button>
 					<ul class="nav__list">
 						<li class="nav__item">
-							<a class="nav__link active" aria-current="page" href="index.html">Home</a>
+							<a class="nav__link" href="index.html">Home</a>
 						</li>
-						<li class="nav__item dropdown">
-							<a class="nav__link dropdown__toggle" href="#">Works</a>
+						<li class="nav__item dropdown active" aria-current="page">
+							<a class="nav__link dropdown__toggle" href="#">Work</a>
 							<ul class="dropdown__menu">
-								<li><a class="dropdown__item active" href="benie.html">Benie</a></li>
+								<li><a class="dropdown__item" href="benie.html">Benie</a></li>
 								<li><a class="dropdown__item" href="dialog.html">Dialog</a></li>
 								<li><a class="dropdown__item" href="now.html">NOW</a></li>
 							</ul>
@@ -49,13 +52,7 @@
 						<li class="nav__item">
 							<a class="nav__link" href="index.html#contact">Contact</a>
 						</li>
-						<li class="nav__item">
-							<a class="nav__link" href="https://www.linkedin.com/in/daniloblum/" target="_blank"><img src="../images/linkedin-icon.svg" alt="" height="20px" /></a>
-						</li>
 					</ul>
-					<button class="nav__mobile-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
 				</div>
 			</nav>
 		</header>
