@@ -41,11 +41,11 @@ section {
 	font-family: 'Josefin Sans', sans-serif;
 }
 .section__hero .hero__title .welcome {
-	font-size: 60px;
+	font-size: 30px;
 	font-weight: 600;
 }
 .section__hero .hero__title .name {
-	font-size: 8vw;
+	font-size: 60px;
 	font-weight: 700;
 }
 .section__hero .hero__title .role {
@@ -164,7 +164,7 @@ section {
 }
 
 .portfolio__role {
-	color: var(--color-regular);
+	color: var(--color-medium);
 }
 
 .shapedividers {

@@ -1,18 +1,21 @@
 :root {
 	/* Main color */
-	--color-main-100: ;
-	--color-main-100: ;
-	--color-main-100: ;
-	--color-main-100: ;
-	--color-main-100: ;
+	--color-main-light: #ff5900;
+	--color-main-medium-light: #ef4f0a;
+	--color-main-medium: #e24413;
+	--color-main-medium-dark: #d3381d;
+	--color-main-dark: #c82f25;
+	--color-main-gradient: linear-gradient(90deg, var(--color-main-dark), var(--color-main-light));
 
 	/* Text color */
 
 	--color-white: #ffffff;
 	--color-black: #000000;
 
-	--color-dark: #212529;
-	--color-regular: #464c52;
+	--color-dark: #17191c;
+	--color-medium-dark: #454a54;
+	--color-medium: #787d87;
+	--color-medium-light: #b9bdc6;
 	--color-light: #fafafc;
 
 	/* Work => NOW */
@@ -35,6 +38,12 @@
 
 .text-light {
 	color: var(--color-light);
+}
+.text-dark {
+	color: var(--color-dark);
+}
+.text-white {
+	color: var(--color-white);
 }
 .bg-light {
 	background-color: var(--color-light);
