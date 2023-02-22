@@ -59,5 +59,12 @@ p {
 a {
 	font-family: 'Lato Regular', sans-serif;
 	font-size: 1rem;
-	color: var(--color-link);
+	color: var(--color-text-link);
+	text-decoration: none;
+}
+a:hover {
+	font-family: 'Lato Regular', sans-serif;
+	font-size: 1rem;
+	color: var(--color-text-link-hover);
+	text-decoration: underline;
 }

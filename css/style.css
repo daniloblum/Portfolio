@@ -33,15 +33,36 @@ body {
 }
 .list-item p {
 	margin-bottom: 0;
+	line-height: 1.5;
 }
 .list-item:last-child {
 	margin-bottom: 0;
 }
 .list-item .material-symbols-outlined {
 	margin-right: 20px;
-	vertical-align: middle;
-	line-height: inherit;
 }
 div p:last-child {
 	margin-bottom: 0;
+}
+
+/* MOW PROTOTYPE */
+#prototype .modal-content {
+	background-color: var(--color-dark);
+}
+#prototype .modal-header {
+	color: var(--color-light);
+	border-color: var(--color-main-medium);
+}
+#prototype .modal-header button {
+	color: var(--color-light);
+	border: none;
+	background-color: transparent;
+}
+
+#prototype .modal-body {
+	overflow-y: hidden;
+}
+#prototype .modal-body iframe {
+	width: 100%;
+	height: 100%;
 }
