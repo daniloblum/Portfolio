@@ -8,7 +8,12 @@
 	--color-main-gradient: linear-gradient(90deg, var(--color-main-dark), var(--color-main-light));
 
 	/* Text color */
+	--color-text-regular: var(--color-dark);
+	--color-text-light: var(--color-medium);
+	--color-text-link: var(--color-main-medium);
+	--color-text-link-hover: var(--color-main-light);
 
+	/* Shaders */
 	--color-white: #ffffff;
 	--color-black: #000000;
 
@@ -40,7 +45,7 @@
 	color: var(--color-light);
 }
 .text-dark {
-	color: var(--color-dark);
+	color: var(--color-dark) !important;
 }
 .text-white {
 	color: var(--color-white);
@@ -72,12 +77,20 @@
 .color-dialog {
 	color: var(--color-dialog-green);
 }
+
+/* NOW COLORS */
+
+.color-now-purple {
+	color: var(--color-now-purple);
+}
 .color-now-green {
 	color: var(--color-now-green);
 }
 .color-now-orange {
 	color: var(--color-now-orange);
 }
+
+/* BACKGROUNDS */
 
 .image__background--now {
 	background-color: var(--color-light) !important;
