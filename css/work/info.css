@@ -1,9 +1,25 @@
 .info {
 	background-color: var(--color-light);
+	padding: 60px 0;
 }
-.info__objective {
+.info .row {
+	justify-content: center;
+}
+.info__content {
 	margin-bottom: 60px;
 }
-.info__title {
-	margin-bottom: 20px;
+.info__content:last-child {
+	margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+	.info {
+		padding: 80px 0;
+	}
+	.info .row {
+		justify-content: start;
+	}
+	.info__content:last-child {
+		margin-bottom: 0;
+	}
 }

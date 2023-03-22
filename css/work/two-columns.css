@@ -1,5 +1,5 @@
 .twoColumns {
-	margin-bottom: 40px;
+	/* margin-bottom: 40px; */
 }
 .twoColumns__label {
 	display: block;
@@ -21,7 +21,7 @@
 	font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
 }
 .twoColumns__image {
-	border-radius: 12px;
+	border-radius: 4px;
 	background-color: var(--color-light);
 	width: 100%;
 }

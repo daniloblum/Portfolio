@@ -1,29 +1,67 @@
 #title {
-	height: 600px;
-	padding-top: 160px;
+	/* height: calc(100vh + 50px); */
+	padding-top: 120px;
+	overflow: hidden;
+	padding-bottom: 40px;
 }
+
 .title--bg-now {
-	background: var(--color-light) url(../../images/work/now/now-head.jpg);
+	background: var(--color-light);
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .title--bg-benie {
-	background: var(--color-benie-blue) url(../../images/work/benie/benie-head.jpg);
+	background: var(--color-benie-gradient);
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .title--bg-dialog {
-	background: var(--color-dialog-green) url(../../images/work/dialog/dialog-head.jpg);
+	background: var(--color-dialog-gradient);
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .title__brand {
-	border-radius: 8px;
-	margin-bottom: 60px;
+	border-radius: 4px;
+	margin-bottom: 40px;
+	max-width: 100px;
 }
 .title__name {
 	margin-bottom: 20px;
+}
+.title__image {
+	margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+	#title {
+		height: 600px;
+		padding-top: 160px;
+		overflow: hidden;
+	}
+	.title--bg-benie {
+		background: var(--color-benie-blue) url(../../images/work/benie/benie-head.jpg);
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.title--bg-dialog {
+		background: var(--color-dialog-green) url(../../images/work/dialog/dialog-head.jpg);
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.title--bg-now {
+		background: var(--color-light) url(../../images/work/now/now-head.jpg);
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.title__brand {
+		border-radius: 8px;
+		margin-bottom: 60px;
+		width: auto;
+	}
 }
