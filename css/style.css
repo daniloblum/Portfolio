@@ -51,10 +51,10 @@ body {
 	width: 100%;
 }
 
-@media (min-width: 992px) {
-	/* .container {
+@media (min-width: 1200px) {
+	.container {
 		max-width: 1140px;
-	} */
+	}
 	.section {
 		padding: 80px 0;
 	}

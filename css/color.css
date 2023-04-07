@@ -31,7 +31,7 @@
 
 	/* Work => Benie */
 	--color-benie-blue: #00a9e0;
-	--color-benie-blue-dark: #007ac9;
+	--color-benie-blue-dark: #00a9e0;
 	--color-benie-gradient: linear-gradient(90deg, var(--color-benie-blue-dark), var(--color-benie-blue));
 	--color-benie-yellow: #f2af00;
 
