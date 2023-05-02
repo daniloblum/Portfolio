@@ -7,12 +7,6 @@
 	--color-main-dark: #c82f25;
 	--color-main-gradient: linear-gradient(90deg, var(--color-main-dark), var(--color-main-light));
 
-	/* Text color */
-	--color-text-regular: var(--color-dark);
-	--color-text-light: var(--color-medium);
-	--color-text-link: var(--color-main-medium);
-	--color-text-link-hover: var(--color-main-light);
-
 	/* Shaders */
 	--color-white: #ffffff;
 	--color-black: #000000;
@@ -20,7 +14,7 @@
 	--color-dark: #17191c;
 	--color-medium-dark: #454a54;
 	--color-medium: #787d87;
-	--color-medium-light: #b9bdc6;
+	--color-medium-light: #cfd5e1;
 	--color-light: #fafafc;
 
 	/* Work => NOW */
@@ -39,6 +33,15 @@
 	--color-dialog-green: #0eb27b;
 	--color-dialog-green-dark: #086b4a;
 	--color-dialog-gradient: linear-gradient(90deg, var(--color-dialog-green-dark), var(--color-dialog-green));
+
+	/* Text color */
+	--color-text-regular: var(--color-dark);
+	--color-text-light: var(--color-medium);
+	--color-text-link: var(--color-main-medium);
+	--color-text-link-hover: var(--color-main-light);
+
+	/* Section Contact */
+	--section-contact-bg: var(--color-white);
 }
 
 .text-light {

@@ -1,5 +1,7 @@
 footer {
+	position: relative;
 	background: var(--color-dark);
+	background: var(--color-main-gradient);
 }
 .footer__copyright {
 	color: var(--color-white);

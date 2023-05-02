@@ -1,7 +1,10 @@
 section {
 	overflow-x: hidden;
 }
-.section__hero {
+
+/* ---------------- Hero ------------------- */
+
+.section-hero {
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -32,29 +35,29 @@ section {
 	width: 100%;
 }
 
-.section__hero .hero__title {
+.section-hero .hero__title {
 	margin-left: 10vw;
 	margin-bottom: calc(30vh - 80px);
 	max-width: 80vw;
 	color: #ffffff;
 	font-family: 'Josefin Sans', sans-serif;
 }
-.section__hero .hero__title h2 {
+.section-hero .hero__title h2 {
 	margin: 0;
 }
-.section__hero .hero__title .welcome {
+.section-hero .hero__title .welcome {
 	display: inline-block;
 	font-size: 1.75rem;
 	font-weight: 400;
 	margin-bottom: 30px;
 }
-.section__hero .hero__title .name {
+.section-hero .hero__title .name {
 	display: inline-block;
 	font-size: 3rem;
 	font-weight: 400;
 	line-height: 1;
 }
-.section__hero .hero__title .role {
+.section-hero .hero__title .role {
 	display: inline-block;
 	font-size: 1.25rem;
 	font-weight: 400;
@@ -63,69 +66,69 @@ section {
 }
 
 @media (min-width: 768px) {
-	.section__hero .hero__title {
+	.section-hero .hero__title {
 		margin-left: 10vw;
 		max-width: 80vw;
 	}
-	.section__hero .hero__title .welcome {
+	.section-hero .hero__title .welcome {
 		font-size: 2.75rem;
 	}
-	.section__hero .hero__title .name {
+	.section-hero .hero__title .name {
 		font-size: 6rem;
 	}
-	.section__hero .hero__title .role {
+	.section-hero .hero__title .role {
 		font-size: 2rem;
 	}
 }
 @media (min-width: 992px) {
-	.section__hero .hero__title {
+	.section-hero .hero__title {
 		margin-left: 10vw;
 		max-width: 50vw;
 	}
-	.section__hero .hero__title .welcome {
+	.section-hero .hero__title .welcome {
 		font-size: 3rem;
 	}
-	.section__hero .hero__title .name {
+	.section-hero .hero__title .name {
 		font-size: 5rem;
 	}
-	.section__hero .hero__title .role {
+	.section-hero .hero__title .role {
 		font-size: 1.75rem;
 	}
 }
 @media (min-width: 1200px) {
-	.section__hero .hero__title {
+	.section-hero .hero__title {
 		margin-left: 10vw;
 		max-width: 40vw;
 	}
-	.section__hero .hero__title .welcome {
+	.section-hero .hero__title .welcome {
 		font-size: 2.5rem;
 	}
-	.section__hero .hero__title .name {
+	.section-hero .hero__title .name {
 		font-size: 5rem;
 	}
-	.section__hero .hero__title .role {
+	.section-hero .hero__title .role {
 		font-size: 1.75rem;
 	}
 }
 @media (min-width: 1400px) {
-	.section__hero .hero__title {
-		margin-left: 10vw;
+	.section-hero .hero__title {
+		margin-left: 15vw;
 		max-width: 40vw;
 	}
-	.section__hero .hero__title .welcome {
+	.section-hero .hero__title .welcome {
 		font-size: 3rem;
 	}
-	.section__hero .hero__title .name {
+	.section-hero .hero__title .name {
 		font-size: 6rem;
 	}
-	.section__hero .hero__title .role {
+	.section-hero .hero__title .role {
 		font-size: 2rem;
 	}
 }
 
 /* ---------------- Portfolio ------------------- */
 
-.section__portfolio {
+.section-portfolio {
 	position: relative;
 }
 .portfolio__mensage {
@@ -281,58 +284,58 @@ section {
 		transform-origin: right;
 	}
 }
-/* .portfolio__work .content {
-	z-index: 1;
-	position: inherit;
-	padding: 0 60px;
-	color: #ffffff;
-}
-.portfolio__work::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 60px;
-	bottom: 60px;
-	border-radius: 20px;
-	z-index: 0;
-} */
-/* .portfolio__work[benie]::before {
-	background-image: var(--color-benie-gradient);
-} */
-.portfolio__work[dialog]::before {
-	background-image: var(--color-dialog-green-gradient);
-}
-.portfolio__work[now]::before {
-	background-color: var(--color-now-purple);
-}
 
-.portfolio__role {
-	color: var(--color-medium);
-}
+/* ---------------- About ------------------- */
 
-.shapedividers {
-	overflow: hidden;
+.section-about {
 	position: relative;
+	background-attachment: fixed;
+	background-image: url('../images/home/endless-constellation.svg'), linear-gradient(90deg, var(--color-medium-light) 0%, var(--color-light) 0%);
+	/* background-image: url('../images/home/endless-constellation.svg'), var(--color-main-gradient); */
 }
-.shapedividers::before {
-	content: '';
-	font-family: 'shape divider from ShapeDividers.com';
-	position: absolute;
-	z-index: 3;
-	pointer-events: none;
-	background-repeat: no-repeat;
-	bottom: -0.1vw;
-	left: -0.1vw;
-	right: -0.1vw;
-	top: -0.1vw;
-	background-size: 100% 233px;
-	background-position: 50% 100%;
-	background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 381 77.25" preserveAspectRatio="none"><g fill="%23ffffff"><path d="M0 68.78l381-33.86v42.33H0z"/><path d="M0 43.38l381-25.4v59.27H0z" opacity=".33"/><path d="M0 17.98L381 0v77.25H0z" opacity=".33"/></g></svg>');
+.section-about__content {
+	padding: 50px 0;
+	/* color: #ffffff; */
 }
 
-@media (min-width: 2100px) {
-	.shapedividers::before {
-		background-size: 100% calc(2vw + 233px);
-	}
+.shape-divider-about-top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
 }
+.shape-divider-about-top svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 50px;
+}
+.shape-divider-about-top .shape-fill {
+	fill: #ffffff;
+}
+.shape-divider-about-bottom {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+}
+.shape-divider-about-bottom svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 50px;
+}
+.shape-divider-about-bottom .shape-fill {
+	fill: var(--section-contact-bg);
+}
+
+.section-about img {
+	border-radius: 4px;
+}
+
+/* ---------------- Contact.css ------------------- */
