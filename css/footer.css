@@ -1,8 +1,25 @@
 footer {
-	background: var(--color-dark);
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--color-main-gradient);
 }
 .footer__copyright {
 	color: var(--color-white);
-	font-family: 'Lato Regular', sans-serif;
-	font-size: 0.75rem;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+}
+footer .footer__links {
+	color: var(--color-white);
+}
+footer .footer__links a {
+	display: inline-block;
+	margin: 10px;
+}
+footer .footer__links a .material-symbols-outlined {
+	font-variation-settings: 'FILL' 0;
+	color: var(--color-white);
+	vertical-align: middle;
 }

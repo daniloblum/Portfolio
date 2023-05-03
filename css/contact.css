@@ -1,0 +1,32 @@
+.section-contact {
+	position: relative;
+	background: var(--section-contact-bg);
+	/* background: var(--color-main-gradient); */
+}
+.section-contact__content {
+	padding: 50px 0;
+}
+.section-contact .form-floating {
+	margin-bottom: 20px;
+}
+.section-contact textarea {
+	min-height: 150px;
+}
+.shape-divider-contact {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+}
+.shape-divider-contact svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 50px;
+}
+.shape-divider-contact .shape-fill {
+	fill: blueviolet;
+}
