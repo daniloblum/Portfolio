@@ -262,7 +262,7 @@
 		display: block;
 	}
 	.nav__list .dropdown__menu .dropdown__item:hover {
-		background-image: linear-gradient(90deg, var(--color-main-dark), var(--color-main-medium));
+		background-image: linear-gradient(90deg, var(--color-main-medium), var(--color-main-medium-light));
 		color: #ffffff;
 	}
 }
