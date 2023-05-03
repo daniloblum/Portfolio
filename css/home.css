@@ -47,19 +47,19 @@ section {
 }
 .section-hero .hero__title .welcome {
 	display: inline-block;
-	font-size: 1.75rem;
+	font-size: 1.8rem;
 	font-weight: 400;
 	margin-bottom: 30px;
 }
 .section-hero .hero__title .name {
 	display: inline-block;
-	font-size: 3rem;
+	font-size: 4rem;
 	font-weight: 400;
 	line-height: 1;
 }
 .section-hero .hero__title .role {
 	display: inline-block;
-	font-size: 1.25rem;
+	font-size: 1.6rem;
 	font-weight: 400;
 	line-height: 125%;
 	margin-top: 30px;
@@ -132,10 +132,15 @@ section {
 	position: relative;
 }
 .portfolio__mensage {
-	padding: 100px 0;
+	padding-bottom: 100px;
 }
 .portfolio__mensage h4 {
 	line-height: 125%;
+	font-size: calc(2rem - var(--font-mobile));
+}
+.portfolio__mensage h4 {
+	line-height: 125%;
+	font-size: calc(2rem - var(--font-mobile));
 }
 .portfolio__mensage h4 span {
 	color: #e04314;
@@ -157,6 +162,9 @@ section {
 	justify-content: end;
 	margin-bottom: 60px;
 	overflow: hidden;
+}
+.portfolio__card:last-child {
+	margin-bottom: 0;
 }
 .portfolio__card .portfolio__bg {
 	position: absolute;
@@ -215,6 +223,9 @@ section {
 }
 
 @media (min-width: 768px) {
+	.portfolio__mensage h4 {
+		font-size: 2.25rem;
+	}
 	.portfolio__card {
 		min-height: 400px;
 		flex-direction: row;
@@ -328,5 +339,5 @@ section {
 /* ---------------- Contact.css ------------------- */
 
 .section-contact .button {
-	min-width: 300px;
+	min-width: 250px;
 }
