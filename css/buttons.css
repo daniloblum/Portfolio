@@ -5,19 +5,18 @@
 	border-radius: 4px;
 	font-family: inherit;
 	text-decoration: none;
+	text-align: center;
 }
 .button span {
 	vertical-align: top;
 	margin-right: 10px;
 }
 .button:hover,
-.button:focus,
-.button:active,
 .button:visited {
 	text-decoration: none;
 	font-family: inherit;
 }
-.button:focus {
+.button:focus-visible {
 	outline: 3px dashed black;
 }
 .button-primary {
