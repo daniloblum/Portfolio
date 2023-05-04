@@ -335,9 +335,3 @@ section {
 .section-about img {
 	border-radius: 4px;
 }
-
-/* ---------------- Contact.css ------------------- */
-
-.section-contact .button {
-	min-width: 250px;
-}
