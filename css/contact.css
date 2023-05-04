@@ -3,30 +3,35 @@
 	background: var(--section-contact-bg);
 	/* background: var(--color-main-gradient); */
 }
-.section-contact__content {
+/* .section-contact__content {
 	padding: 50px 0;
-}
+} */
 .section-contact .form-floating {
 	margin-bottom: 20px;
 }
 .section-contact textarea {
 	min-height: 150px;
 }
-.shape-divider-contact {
+.section-contact__bg {
+	background: linear-gradient(0deg, var(--color-light) 0%, var(--color-white) 10%);
+}
+.shape-divider-about-bottom {
 	position: absolute;
 	bottom: 0;
-	left: 0;
 	width: 100%;
 	overflow: hidden;
 	line-height: 0;
 	transform: rotate(180deg);
 }
-.shape-divider-contact svg {
+.shape-divider-about-bottom svg {
 	position: relative;
 	display: block;
 	width: calc(100% + 1.3px);
 	height: 50px;
 }
-.shape-divider-contact .shape-fill {
-	fill: blueviolet;
+.shape-divider-about-bottom .shape-fill {
+	fill: var(--section-contact-bg);
+}
+.section-contact .button {
+	min-width: 250px;
 }

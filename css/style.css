@@ -24,6 +24,7 @@ body {
 	display: inherit;
 }
 .section {
+	position: relative;
 	padding: 40px 0;
 	overflow-x: hidden;
 	/* margin-bottom: var(--margin-bottom-section); */
@@ -80,7 +81,8 @@ body {
 	margin-right: 20px;
 }
 
-/* MOW PROTOTYPE */
+/* ---------------- MOW PROTOTYPE ------------------- */
+
 #prototype .modal-content {
 	background-color: var(--color-dark);
 }
