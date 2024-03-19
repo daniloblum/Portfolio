@@ -1,23 +1,18 @@
-const heroDivider = document.querySelectorAll('#divider path');
-const heroHeight = document.querySelector('.hero__divider').scrollHeight;
-const headerHeight = document.querySelector('.header');
-const headerBrand = document.querySelector('.brand__link');
+// Hero Behavior
 
-// Hero behavior
+let heroSection = document.querySelector('#title');
+let headerHeight = document.querySelector('.header');
+let headerBrand = document.querySelector('.brand__link');
+let heroHeight = heroSection.clientHeight;
+
 window.addEventListener('scroll', function () {
-	const value1 = 100 - ((window.scrollY * 100) / heroHeight) * 1.5;
-	const value2 = 70 - ((window.scrollY * 70) / heroHeight) * 1.5;
-	const value3 = 0;
+	let value1 = window.scrollY + 80; // Ficou fixo
+	let value2 = heroHeight * 0.7 - window.scrollY / 70; // Ficou fixo em 70%
+	let value3 = heroHeight - window.scrollY * 0.5;
 
-	heroDivider.forEach(pathElement => {
-		if (pathElement.classList.contains('divider-desktop')) {
-			pathElement.setAttribute('d', 'M0 ' + value1 + ' L60 ' + value2 + ' L100 ' + value3 + ' V100 H0 Z');
-		} else {
-			pathElement.setAttribute('d', 'M0 ' + value1 + ' L100 ' + value2 + ' L100 ' + value3 + ' V100 H0 Z');
-		}
-	});
+	heroSection.style.clipPath = `polygon(0 0, 100% 0, 100% ${value1}px, 60% 70%, 0 ${value3}px)`;
 
-	if (value1 <= 0) {
+	if (value1 > value3) {
 		headerBrand.classList.remove('d-none');
 		headerBrand.classList.add('d-block');
 	} else {
@@ -27,9 +22,10 @@ window.addEventListener('scroll', function () {
 });
 
 // Scroll to Section
-$(document).ready(function () {
+
+document.addEventListener('DOMContentLoaded', function () {
 	// Add smooth scrolling to all links
-	$('a').on('click', function (event) {
+	document.querySelector('a').addEventListener('click', function (event) {
 		// Make sure this.hash has a value before overriding default behavior
 		if (this.hash !== '') {
 			// Prevent default anchor click behavior
@@ -52,4 +48,34 @@ $(document).ready(function () {
 			);
 		} // End if
 	});
+});
+
+// Works motions
+
+// Intersection Observer Animation - CARDS
+
+let portfolioCards = document.querySelectorAll('.portfolio__card');
+
+const options = {
+	root: null, //it is the viewport
+	rootMargin: '-50%',
+	threshold: 0,
+};
+
+const observerCards = new IntersectionObserver(function (entries, observer) {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
+			// console.log(entry.target);
+			entry.target.classList.add('zoom--in');
+			entry.target.classList.remove('card--out');
+		} else {
+			// console.log(entry.target)
+			entry.target.classList.remove('zoom--in');
+			entry.target.classList.add('card--out');
+		}
+	});
+}, options);
+
+portfolioCards.forEach(card => {
+	observerCards.observe(card);
 });
