@@ -4,6 +4,7 @@
 	margin: 0;
 	z-index: 1020;
 	color: var(--color-white);
+	transition: 0.25s;
 }
 .navbar {
 	width: 100%;
